@@ -70,7 +70,7 @@ module.exports = {
   |
   */
   mongodb: {
-    connectionString: Env.get('MONGO_CONNECTION_STRING', null),
+    connectionString: Env.get(DATABASE_URL, null),
     connection: {
       host: Env.get('MONGO_HOST', 'cluster0.o2weg.mongodb.net'),
       port: Env.get('MONGO_PORT', 27017),
